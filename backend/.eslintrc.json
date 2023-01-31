@@ -686,24 +686,6 @@
         "yield-star-spacing": "error",
         "yoda": ["error", "never", { "exceptRange": true }]
     },
-    "overrides": [
-        {
-            "files": ["*spec.*"],
-            "rules": {
-                "implicit-arrow-linebreak": "off",
-                "init-declarations": "off",
-                "newline-per-chained-call": "off",
-                "no-magic-numbers": "off",
-                "no-undef": "off",
-                "sort-imports": "off",
-                "flowtype/require-return-type": "off",
-                "@typescript-eslint/no-unsafe-assignment": "off",
-                "@typescript-eslint/no-unsafe-call": "off",
-                "@typescript-eslint/no-unsafe-member-access": "off",
-                "@typescript-eslint/no-unsafe-return": "off"
-            }
-        }
-    ],
     "settings": {
         "flowtype": {
             "onlyFilesWithFlowAnnotation": false
