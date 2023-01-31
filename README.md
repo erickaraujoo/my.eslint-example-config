@@ -20,6 +20,18 @@ At the root of each directory where EsLint was configured, run the following com
 npm install
 ```
 
+or
+
+```bash
+yarn install
+```
+
+or
+
+```bash
+pnpm install
+```
+
 ## Required plugins - VS Code
 
 ### [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) - [EsLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) - [Prettier Eslint](https://marketplace.visualstudio.com/items?itemName=rvest.vs-code-prettier-eslint)
