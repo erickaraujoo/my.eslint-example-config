@@ -830,5 +830,20 @@
                 "project": "./tsconfig.json"
             }
         }
-    }
+    },
+    "ignorePatterns": [
+        "*.log",
+        "*.local",
+        "/build/**",
+        "/coverage/**",
+        "/dist/**",
+        "/docs/**",
+        "/logs/**",
+        "/log/**",
+        "/templates/**",
+        "/tests/**",
+        "/test/**",
+        "/tmp/**",
+        "/node_modules"
+    ]
 }
