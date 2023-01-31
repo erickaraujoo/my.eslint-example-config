@@ -2,9 +2,9 @@
 
 # Example - EsLint Config
 
-![Typescript](https://img.shields.io/badge/TypeScript-151519?style=for-the-badge&logo=typescript&logoColor=3178C6)
-![EsLint](https://img.shields.io/badge/eslint-151519?style=for-the-badge&logo=eslint&logoColor=4B32C3)
-![EsLint](https://img.shields.io/badge/prettier-151519?style=for-the-badge&logo=prettier&logoColor=F7B93E)
+![Typescript](https://img.shields.io/badge/typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![EsLint](https://img.shields.io/badge/eslint-4B32C3?style=for-the-badge&logo=eslint&logoColor=white)
+![EsLint](https://img.shields.io/badge/prettier-F7B93E?style=for-the-badge&logo=prettier&logoColor=black)
 
 </center>
 
@@ -16,7 +16,7 @@ Repository created for code standardization using EsLint with its custom rules.
 
 At the root of each directory where EsLint was configured, run the following command:
 
-```json
+```bash
 npm install
 ```
 
