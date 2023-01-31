@@ -33,14 +33,17 @@ npm install
 - [eslint-config-airbnb-base](https://www.npmjs.com/package/eslint-config-airbnb-base) - _v15.0.0_
 - [eslint-config-airbnb-typescript](https://www.npmjs.com/package/eslint-config-airbnb-typescript) - _v17.0.0_
 - [eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier) - _v8.6.0_
+- [eslint-config-standard-with-typescript](https://www.npmjs.com/package/eslint-config-standard-with-typescript) - _v33.0.0_
 - [eslint-import-resolver-typescript](https://www.npmjs.com/package/eslint-import-resolver-typescript) - _v3.5.3_
 - [eslint-plugin-eslint-comments](https://www.npmjs.com/package/eslint-plugin-eslint-comments) - _v3.2.0_
 - [eslint-plugin-eslint-plugin](https://www.npmjs.com/package/eslint-plugin-eslint-plugin) - _v5.0.7_
 - [eslint-plugin-flowtype](https://www.npmjs.com/package/eslint-plugin-flowtype) - _v8.0.3_
 - [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import) - _v2.27.5_
 - [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y) - _v6.7.1_
+- [eslint-plugin-n](https://www.npmjs.com/package/eslint-plugin-n) - _v15.6.1_
 - [eslint-plugin-no-loops](https://www.npmjs.com/package/eslint-plugin-no-loops) - _v0.3.0_
 - [eslint-plugin-prettier](https://www.npmjs.com/package/eslint-plugin-prettier) - _v4.2.1_
+- [eslint-plugin-promise](https://www.npmjs.com/package/eslint-plugin-promise) - _v6.1.1_
 - [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react) - _v7.32.1_
 - [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks) - _v4.6.0_
 - [eslint-plugin-simple-import-sort](https://www.npmjs.com/package/eslint-plugin-simple-import-sort) - _v9.0.0_
