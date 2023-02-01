@@ -513,7 +513,7 @@
         "guard-for-in": "error",
         "id-denylist": ["error"] /* Disallow specified identifiers */,
         "id-length": ["error", { "min": 2 }],
-        "id-match": ["error", "^[A-Z](([_a-zA-Z0-9]?)*)$|^[a-z](([a-z0-9]+[A-Z0-9]?)*)$"],
+        "id-match": "off",
         "implicit-arrow-linebreak": "off",
         "indent": "off",
         "init-declarations": "error",
