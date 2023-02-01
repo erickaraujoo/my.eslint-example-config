@@ -836,6 +836,7 @@
     "ignorePatterns": [
         "*.log",
         "*.local",
+        "*.spec.ts",
         "/build/**",
         "/coverage/**",
         "/dist/**",
