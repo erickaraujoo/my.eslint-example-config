@@ -66,20 +66,7 @@
         "@typescript-eslint/init-declarations": "off",
         "@typescript-eslint/keyword-spacing": "off",
         "@typescript-eslint/lines-between-class-members": "off",
-        "@typescript-eslint/member-delimiter-style": [
-            "error",
-            {
-                "multiline": {
-                    "delimiter": "semi",
-                    "requireLast": true
-                },
-                "multilineDetection": "brackets",
-                "singleline": {
-                    "delimiter": "semi",
-                    "requireLast": false
-                }
-            }
-        ],
+        "@typescript-eslint/member-delimiter-style": "off",
         "@typescript-eslint/member-ordering": "error",
         "@typescript-eslint/method-signature-style": "error",
         "@typescript-eslint/naming-convention": [
@@ -204,6 +191,13 @@
         "eslint-comments/no-unlimited-disable": "error",
         "eslint-comments/no-unused-enable": "error",
 
+        /* Eslint Plugin - Default */
+        "eslint-plugin/prefer-message-ids": "off",
+        "eslint-plugin/require-meta-docs-description": "off",
+        "eslint-plugin/require-meta-docs-url": "off",
+        "eslint-plugin/require-meta-type": "off",
+        "eslint-plugin/require-meta-schema": "off",
+
         /* Flowtype - Default */
         "flowtype/array-style-complex-type": "error",
         "flowtype/array-style-simple-type": "error",
@@ -215,7 +209,10 @@
         "flowtype/generic-spacing": ["error", "never"],
         "flowtype/interface-id-match": ["error", "^([A-Z][a-z0-9]+)+Type$"],
         "flowtype/no-dupe-keys": "off",
-        "flowtype/no-duplicate-type-union-intersection-members": ["error", { "checkIntersections": true }],
+        "flowtype/no-duplicate-type-union-intersection-members": [
+            "error",
+            { "checkIntersections": true }
+        ],
         "flowtype/no-mixed": "error",
         "flowtype/no-mutable-array": "off",
         "flowtype/no-primitive-constructor-types": "error",
@@ -317,10 +314,7 @@
         "array-bracket-newline": ["error", "consistent"],
         "array-bracket-spacing": "error",
         "array-callback-return": "error",
-        "array-element-newline": [
-            "error",
-            "consistent"
-        ],
+        "array-element-newline": ["error", "consistent"],
         "arrow-body-style": ["error", "as-needed"],
         "arrow-parens": "off",
         "arrow-spacing": "error",
@@ -350,7 +344,10 @@
         "func-call-spacing": "error",
         "func-name-matching": "error",
         "func-names": ["error", "always"],
-        "func-style": ["error", "expression"] /* Enforce the consistent use of either function declarations or expressions */,
+        "func-style": [
+            "error",
+            "expression"
+        ] /* Enforce the consistent use of either function declarations or expressions */,
         "function-call-argument-newline": ["error", "consistent"],
         "function-paren-newline": ["error", "consistent"],
         "generator-star-spacing": "error",
@@ -360,13 +357,16 @@
         "id-denylist": ["error"] /* Disallow specified identifiers */,
         "id-length": ["error", { "min": 2 }],
         "id-match": ["error", "^[A-Z](([_a-zA-Z0-9]?)*)$|^[a-z](([a-z0-9]+[A-Z0-9]?)*)$"],
-        "implicit-arrow-linebreak": ["error", "beside"],
+        "implicit-arrow-linebreak": "off",
         "indent": "off",
         "init-declarations": "error",
         "jsx-quotes": ["error", "prefer-double"],
         "key-spacing": ["error", { "afterColon": true, "beforeColon": false }],
         "keyword-spacing": "error",
-        "line-comment-position": ["error", { "position": "above" }] /* Enforce position of line comments */,
+        "line-comment-position": [
+            "error",
+            { "position": "above" }
+        ] /* Enforce position of line comments */,
         "linebreak-style": ["error", "unix"],
         "lines-around-comment": [
             "error",
@@ -380,7 +380,7 @@
         "lines-between-class-members": "error",
         "logical-assignment-operators": ["error", "always"],
         "max-classes-per-file": ["error", 1],
-        "max-depth": ["error", 3],
+        "max-depth": ["error", 4],
         "max-len": [
             "error",
             100,
@@ -393,16 +393,16 @@
             }
         ],
         "max-lines": ["error", 300],
-        "max-lines-per-function": ["error", 100],
+        "max-lines-per-function": ["error", 150],
         "max-nested-callbacks": ["error", 3],
         "max-params": ["error", 3],
-        "max-statements": ["error", 12],
+        "max-statements": ["error", 20],
         "max-statements-per-line": ["error", { "max": 1 }],
         "multiline-comment-style": ["error", "starred-block"],
-        "multiline-ternary": ["error", "never"],
+        "multiline-ternary": "off",
         "new-cap": "error",
         "new-parens": "error",
-        "newline-per-chained-call": ["error", { "ignoreChainWithDepth": 2 }],
+        "newline-per-chained-call": "off",
         "no-alert": "error",
         "no-array-constructor": "error",
         "no-async-promise-executor": "error",
@@ -481,7 +481,7 @@
         "no-new-object": "error",
         "no-new-symbol": "error",
         "no-new-wrappers": "error",
-        "no-nonoctal-decimal-escape": "error" ,
+        "no-nonoctal-decimal-escape": "error",
         "no-obj-calls": "error",
         "no-octal": "error",
         "no-octal-escape": "error",
@@ -505,10 +505,7 @@
                 "name": "fdescribe"
             }
         ],
-        "no-restricted-imports": [
-            "error",
-            "underscore"
-        ],
+        "no-restricted-imports": ["error", "underscore"],
         "no-restricted-properties": [
             "error",
             {
@@ -559,7 +556,7 @@
         "no-undefined": "error",
         "no-underscore-dangle": "off",
         "no-unexpected-multiline": "error",
-        "no-unmodified-loop-condition": "error" ,
+        "no-unmodified-loop-condition": "error",
         "no-unneeded-ternary": "error",
         "no-unreachable": "error",
         "no-unreachable-loop": "error",
@@ -626,14 +623,18 @@
         "prefer-named-capture-group": "error",
         "prefer-numeric-literals": "error",
         "prefer-object-has-own": "error",
-        "prefer-object-spread": "error" /* Disallow using Object.assign with an object literal as the first argument and prefer the use of object spread instead */, 
+        "prefer-object-spread": "error" /* Disallow using Object.assign with an object literal as the first argument and prefer the use of object spread instead */,
         "prefer-promise-reject-errors": "error",
         "prefer-regex-literals": "error",
         "prefer-rest-params": "error",
         "prefer-spread": "error",
         "prefer-template": "error",
         "quote-props": "error" /* Require quotes around object literal property names */,
-        "quotes": ["error", "single", { "avoidEscape": true }] /* Enforce the consistent use of either backticks, double, or single quotes */,
+        "quotes": [
+            "error",
+            "single",
+            { "avoidEscape": true }
+        ] /* Enforce the consistent use of either backticks, double, or single quotes */,
         "radix": "error",
         "require-atomic-updates": ["error", { "allowProperties": false }],
         "require-await": "error" /* This rule warns async functions which have no await expression. */,
