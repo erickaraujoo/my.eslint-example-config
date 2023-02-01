@@ -109,7 +109,7 @@
         "@typescript-eslint/no-redeclare": "off",
         "@typescript-eslint/no-redundant-type-constituents": "error",
         "@typescript-eslint/no-require-imports": "error",
-        "@typescript-eslint/no-restricted-imports": ["error", { "patterns": ["../", "./"] }],
+        "@typescript-eslint/no-restricted-imports": ["error", { "patterns": ["../"] }],
         "@typescript-eslint/no-shadow": "off",
         "@typescript-eslint/no-this-alias": "error",
         "@typescript-eslint/no-throw-literal": "off",
@@ -269,7 +269,7 @@
         "import/no-mutable-exports": "error",
         "import/no-webpack-loader-syntax": "error",
         "import/no-unresolved": "error",
-        "import/order": "error",
+        "import/order": "off",
         "import/prefer-default-export": "error",
 
         /* No Loops - Default */
@@ -323,7 +323,7 @@
         "brace-style": ["error", "1tbs"],
         "camelcase": "error",
         "capitalized-comments": ["error", "always"],
-        "class-methods-use-this": "error",
+        "class-methods-use-this": "off",
         "comma-dangle": ["error", "only-multiline"],
         "comma-spacing": "error",
         "comma-style": ["error", "last"],
@@ -644,16 +644,7 @@
         "semi": ["error", "always"],
         "semi-spacing": ["error", { "after": true, "before": false }],
         "semi-style": "error",
-        "sort-imports": [
-            "error",
-            {
-                "allowSeparatedGroups": false,
-                "ignoreCase": false,
-                "ignoreDeclarationSort": true,
-                "ignoreMemberSort": false,
-                "memberSyntaxSortOrder": ["none", "all", "multiple", "single"]
-            }
-        ],
+        "sort-imports": "off",
         "sort-keys": "off",
         "sort-vars": ["error", { "ignoreCase": false }],
         "space-before-blocks": "error",
