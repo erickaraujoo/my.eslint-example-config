@@ -321,10 +321,7 @@
             "error",
             { "children": "never", "propElementValues": "always", "props": "always" }
         ],
-        "react/jsx-curly-newline": [
-            "error",
-            { "multiline": "consistent", "singleline": "consistent" }
-        ],
+        "react/jsx-curly-newline": "off",
         "react/jsx-curly-spacing": "error",
         "react/jsx-equals-spacing": ["error", "never"],
         "react/jsx-filename-extension": ["error", { "extensions": [".ts", ".tsx"] }],
@@ -342,7 +339,7 @@
         "react/jsx-indent": "off",
         "react/jsx-indent-props": "off",
         "react/jsx-key": ["error", { "checkFragmentShorthand": false }],
-        "react/jsx-max-depth": ["error", { "max": 4 }],
+        "react/jsx-max-depth": ["error", { "max": 8 }],
         "react/jsx-max-props-per-line": "off",
         "react/jsx-newline": [
             "error",
@@ -506,7 +503,7 @@
             "expression"
         ] /* Enforce the consistent use of either function declarations or expressions */,
         "function-call-argument-newline": ["error", "consistent"],
-        "function-paren-newline": ["error", "consistent"],
+        "function-paren-newline": "off",
         "generator-star-spacing": "error",
         "getter-return": "error",
         "grouped-accessor-pairs": "error",
@@ -570,7 +567,7 @@
         "no-class-assign": "error",
         "no-compare-neg-zero": "error",
         "no-cond-assign": "error",
-        "no-confusing-arrow": "error",
+        "no-confusing-arrow": "off",
         "no-console": "warn",
         "no-const-assign": "error",
         "no-constant-binary-expression": "error",
@@ -738,7 +735,7 @@
         "one-var": ["error", "never"],
         "one-var-declaration-per-line": "error",
         "operator-assignment": "error",
-        "operator-linebreak": "error",
+        "operator-linebreak": "off",
         "padded-blocks": ["error", "never"] /* Require or disallow padding within blocks */,
         "padding-line-between-statements": [
             "error",
@@ -799,7 +796,7 @@
         "valid-typeof": "error",
         "vars-on-top": "error",
         "wrap-iife": "error",
-        "wrap-regex": "error",
+        "wrap-regex": "off",
         "yield-star-spacing": "error",
         "yoda": ["error", "never", { "exceptRange": true }]
     },
