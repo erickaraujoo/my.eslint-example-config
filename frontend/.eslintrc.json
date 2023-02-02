@@ -270,7 +270,7 @@
         "import/no-unresolved": "error",
         "import/no-webpack-loader-syntax": "error",
         "import/order": "off",
-        "import/prefer-default-export": "error",
+        "import/prefer-default-export": "off",
 
         /* JSX - Default */
         "jsx-a11y/label-has-associated-control": "off",

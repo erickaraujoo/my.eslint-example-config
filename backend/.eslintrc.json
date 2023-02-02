@@ -270,7 +270,7 @@
         "import/no-webpack-loader-syntax": "error",
         "import/no-unresolved": "error",
         "import/order": "off",
-        "import/prefer-default-export": "error",
+        "import/prefer-default-export": "off",
 
         /* No Loops - Default */
         "no-loops/no-loops": "error",
