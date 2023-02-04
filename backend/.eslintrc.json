@@ -622,7 +622,7 @@
         "prefer-exponentiation-operator": "error",
         "prefer-named-capture-group": "error",
         "prefer-numeric-literals": "error",
-        "prefer-object-has-own": "error",
+        "prefer-object-has-own": "off",
         "prefer-object-spread": "error" /* Disallow using Object.assign with an object literal as the first argument and prefer the use of object spread instead */,
         "prefer-promise-reject-errors": "error",
         "prefer-regex-literals": "error",
