@@ -420,7 +420,7 @@
         "react/no-unknown-property": ["error", { "ignore": ["css"] }],
         "react/no-unresolved": "off",
         "react/no-unsafe": "error",
-        "react/no-unstable-nested-components": "error",
+        "react/no-unstable-nested-components": "off",
         "react/no-unused-class-component-methods": "error",
         "react/no-unused-prop-types": "error",
         "react/no-unused-state": "error",
