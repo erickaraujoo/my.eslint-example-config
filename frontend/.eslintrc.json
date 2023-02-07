@@ -313,7 +313,7 @@
         ],
         "react/hook-use-state": ["error", { "allowDestructuredState": false }],
         "react/iframe-missing-sandbox": "error",
-        "react/jsx-boolean-value": ["error", "always"],
+        "react/jsx-boolean-value": ["error", "never"],
         "react/jsx-child-element-spacing": "error",
         "react/jsx-closing-bracket-location": "error",
         "react/jsx-closing-tag-location": "error",
