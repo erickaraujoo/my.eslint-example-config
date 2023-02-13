@@ -663,6 +663,12 @@
     "yield-star-spacing": "error",
     "yoda": ["error", "never", { "exceptRange": true }]
   },
+  "overrides": [
+    {
+      "files": "**/*.enum.ts",
+      "rules": { "@typescript-eslint/no-magic-numbers": "off" }
+    }
+  ],
   "settings": {
     "flowtype": {
       "onlyFilesWithFlowAnnotation": false
