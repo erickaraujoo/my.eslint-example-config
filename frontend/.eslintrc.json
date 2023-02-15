@@ -809,6 +809,17 @@
       }
     },
     {
+      "files": ["**/*.spec.ts", "**/*.test.ts", "test/*", "tests/*"],
+      "rules": {
+        "no-undef": "off",
+        "init-declarations": "off",
+        "@typescript-eslint/no-unsafe-assignment": "off",
+        "@typescript-eslint/no-unsafe-argument": "off",
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/unbound-method": "off"
+      }
+    },
+    {
       "files": ["**/*.cjs", "**/*.js"],
       "rules": {
         "@typescript-eslint/no-require-imports": "off",
@@ -834,7 +845,9 @@
   "ignorePatterns": [
     "*.log",
     "*.local",
-    "*.spec.ts",
+    "*.config.js",
+    "*.json",
+    "**/migrations/*",
     "/build/**",
     "/coverage/**",
     "/dist/**",
@@ -842,8 +855,6 @@
     "/logs/**",
     "/log/**",
     "/templates/**",
-    "/tests/**",
-    "/test/**",
     "/tmp/**",
     "/node_modules"
   ]

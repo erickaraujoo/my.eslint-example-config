@@ -665,8 +665,25 @@
   },
   "overrides": [
     {
+      "files": "**/*.d.ts",
+      "rules": {
+        "spaced-comment": "off"
+      }
+    },
+    {
       "files": "**/*.enum.ts",
       "rules": { "@typescript-eslint/no-magic-numbers": "off" }
+    },
+    {
+      "files": ["**/*.spec.ts", "**/*.test.ts", "test/*", "tests/*"],
+      "rules": {
+        "no-undef": "off",
+        "init-declarations": "off",
+        "@typescript-eslint/no-unsafe-assignment": "off",
+        "@typescript-eslint/no-unsafe-argument": "off",
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/unbound-method": "off"
+      }
     }
   ],
   "settings": {
@@ -687,7 +704,10 @@
   "ignorePatterns": [
     "*.log",
     "*.local",
-    "*.spec.ts",
+    "*.config.js",
+    "*.json",
+    "*.prisma",
+    "**/migrations/*",
     "/build/**",
     "/coverage/**",
     "/dist/**",
@@ -695,8 +715,6 @@
     "/logs/**",
     "/log/**",
     "/templates/**",
-    "/tests/**",
-    "/test/**",
     "/tmp/**",
     "/node_modules"
   ]

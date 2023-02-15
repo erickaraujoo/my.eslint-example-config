@@ -801,6 +801,25 @@
     "yield-star-spacing": "error",
     "yoda": ["error", "never", { "exceptRange": true }]
   },
+  "overrides": [
+    {
+      "files": "**/*.d.ts",
+      "rules": {
+        "spaced-comment": "off"
+      }
+    },
+    {
+      "files": ["**/*.spec.ts", "**/*.test.ts", "test/*", "tests/*"],
+      "rules": {
+        "no-undef": "off",
+        "init-declarations": "off",
+        "@typescript-eslint/no-unsafe-assignment": "off",
+        "@typescript-eslint/no-unsafe-argument": "off",
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/unbound-method": "off"
+      }
+    }
+  ],
   "settings": {
     "flowtype": {
       "onlyFilesWithFlowAnnotation": false
@@ -819,7 +838,9 @@
   "ignorePatterns": [
     "*.log",
     "*.local",
-    "*.spec.ts",
+    "*.config.js",
+    "*.json",
+    "**/migrations/*",
     "/build/**",
     "/coverage/**",
     "/dist/**",
@@ -827,8 +848,6 @@
     "/logs/**",
     "/log/**",
     "/templates/**",
-    "/tests/**",
-    "/test/**",
     "/tmp/**",
     "/node_modules"
   ]
