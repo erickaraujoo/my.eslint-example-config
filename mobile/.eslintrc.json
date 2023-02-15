@@ -801,21 +801,6 @@
     "yield-star-spacing": "error",
     "yoda": ["error", "never", { "exceptRange": true }]
   },
-  "overrides": [
-    {
-      "files": "**/*.d.ts",
-      "rules": {
-        "spaced-comment": "off"
-      }
-    },
-    {
-      "files": ["**/*.cjs", "**/*.js"],
-      "rules": {
-        "@typescript-eslint/no-require-imports": "off",
-        "@typescript-eslint/no-var-requires": "off"
-      }
-    }
-  ],
   "settings": {
     "flowtype": {
       "onlyFilesWithFlowAnnotation": false
