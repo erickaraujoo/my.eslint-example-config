@@ -34,7 +34,7 @@
     "allowUmdGlobalAccess": true,
     "moduleSuffixes": [],
     "resolveJsonModule": true,
-    "noResolve": true,
+    "noResolve": false,
 
     /* JavaScript Support */
     "allowJs": false,
@@ -47,7 +47,7 @@
     "sourceMap": true,
     "outDir": "build",
     "removeComments": true,
-    "noEmit": false,
+    "noEmit": true,
     "importHelpers": true,
     "importsNotUsedAsValues": "remove",
     "downlevelIteration": true,

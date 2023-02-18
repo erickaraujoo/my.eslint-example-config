@@ -1,4 +1,5 @@
 {
+  "extends": "expo/tsconfig.base",
   "compilerOptions": {
     /* Projects */
     "incremental": true,
@@ -24,7 +25,7 @@
 
     /* Modules */
     "module": "ESNext",
-    "rootDir": "src",
+    "rootDir": "",
     "moduleResolution": "nodenext",
     "baseUrl": "src",
     "paths": {},
@@ -34,7 +35,7 @@
     "allowUmdGlobalAccess": true,
     "moduleSuffixes": [],
     "resolveJsonModule": true,
-    "noResolve": true,
+    "noResolve": false,
 
     /* JavaScript Support */
     "allowJs": false,
@@ -46,7 +47,7 @@
     "emitDeclarationOnly": false,
     "sourceMap": true,
     "removeComments": true,
-    "noEmit": false,
+    "noEmit": true,
     "importHelpers": true,
     "importsNotUsedAsValues": "remove",
     "downlevelIteration": true,
