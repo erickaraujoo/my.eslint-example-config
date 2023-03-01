@@ -23,8 +23,8 @@
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": "latest",
-    "sourceType": "module",
     "project": "./tsconfig.json",
+    "sourceType": "module",
     "tsconfigRootDir": "./"
   },
   "plugins": [
@@ -201,7 +201,7 @@
     "@typescript-eslint/unified-signatures": "error",
 
     /* Comments - Default */
-    "eslint-comments/disable-enable-pair": "error",
+    "eslint-comments/disable-enable-pair": ["error", { "allowWholeFile": true }],
     "eslint-comments/no-aggregating-enable": "error",
     "eslint-comments/no-duplicate-disable": "error",
     "eslint-comments/no-unlimited-disable": "error",
@@ -423,7 +423,7 @@
     "no-compare-neg-zero": "error",
     "no-cond-assign": "error",
     "no-confusing-arrow": "off",
-    "no-console": "warn",
+    "no-console": "error",
     "no-const-assign": "error",
     "no-constant-binary-expression": "error",
     "no-constant-condition": "error",
@@ -666,17 +666,17 @@
   },
   "overrides": [
     {
-      "files": "**/*.d.ts",
+      "files": ["**/*.d.ts"],
       "rules": {
         "spaced-comment": "off"
       }
     },
     {
-      "files": "**/*.enum.{ts,tsx}",
+      "files": ["**/*.{enum,enums}.ts", "**/{enum,enums}/**/*.ts"],
       "rules": { "@typescript-eslint/no-magic-numbers": "off" }
     },
     {
-      "files": ["**/*.spec.{ts,tsx}", "**/*.test.{ts,tsx}", "test/**/*"],
+      "files": ["**/*.{spec,test}.ts", "test/**/*"],
       "rules": {
         "no-undef": "off",
         "init-declarations": "off",

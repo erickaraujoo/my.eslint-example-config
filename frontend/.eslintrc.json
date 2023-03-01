@@ -22,12 +22,13 @@
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "project": "./tsconfig.json",
     "ecmaFeatures": {
       "jsx": true
     },
     "ecmaVersion": "latest",
-    "sourceType": "module"
+    "project": "./tsconfig.json",
+    "sourceType": "module",
+    "tsconfigRootDir": "./"
   },
   "plugins": [
     "@typescript-eslint",
@@ -202,7 +203,7 @@
     "@typescript-eslint/unified-signatures": "error",
 
     /* Comments - Default */
-    "eslint-comments/disable-enable-pair": "error",
+    "eslint-comments/disable-enable-pair": ["error", { "allowWholeFile": true }],
     "eslint-comments/no-aggregating-enable": "error",
     "eslint-comments/no-duplicate-disable": "error",
     "eslint-comments/no-unlimited-disable": "error",
@@ -804,17 +805,17 @@
   },
   "overrides": [
     {
-      "files": "**/*.d.ts",
+      "files": ["**/*.d.{ts,tsx}"],
       "rules": {
         "spaced-comment": "off"
       }
     },
     {
-      "files": "**/*.enum.{ts,tsx}",
+      "files": ["**/*.{enum,enums}.{ts,tsx}", "**/{enum,enums}/**/*.{ts,tsx}"],
       "rules": { "@typescript-eslint/no-magic-numbers": "off" }
     },
     {
-      "files": ["**/*.spec.{ts,tsx}", "**/*.test.{ts,tsx}"],
+      "files": ["**/*.{spec,test}.{ts,tsx}", "test/**/*"],
       "rules": {
         "no-undef": "off",
         "init-declarations": "off",
@@ -825,11 +826,15 @@
       }
     },
     {
-      "files": ["**/*.cjs", "**/*.js"],
+      "files": ["**/*.{js,cjs}"],
       "rules": {
         "@typescript-eslint/no-require-imports": "off",
         "@typescript-eslint/no-var-requires": "off"
       }
+    },
+    {
+      "files": ["**/{atomic-component,atomic-components}/{atoms,organisms}/**/*.{ts,tsx}"],
+      "rules": { "react/jsx-props-no-spreading": "off" }
     }
   ],
   "settings": {
