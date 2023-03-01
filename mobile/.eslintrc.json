@@ -608,7 +608,7 @@
     "no-extra-bind": "error",
     "no-extra-boolean-cast": "error",
     "no-extra-label": "error",
-    "no-extra-parens": "error",
+    "no-extra-parens": "off",
     "no-extra-semi": "off",
     "no-fallthrough": "error",
     "no-floating-decimal": "error",
@@ -833,7 +833,7 @@
       }
     },
     {
-      "files": ["**/{atomic-component,atomic-components}/{atoms,organisms}/**/*.{ts,tsx}"],
+      "files": ["**/{atomic-component,atomic-components}/{atom,atoms,organism,organisms}/**/*.{ts,tsx}"],
       "rules": { "react/jsx-props-no-spreading": "off" }
     }
   ],
