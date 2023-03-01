@@ -810,7 +810,11 @@
       }
     },
     {
-      "files": ["**/*.spec.ts", "**/*.test.ts", "test/*", "tests/*"],
+      "files": "**/*.enum.{ts,tsx}",
+      "rules": { "@typescript-eslint/no-magic-numbers": "off" }
+    },
+    {
+      "files": ["**/*.spec.{ts,tsx}", "**/*.test.{ts,tsx}"],
       "rules": {
         "no-undef": "off",
         "init-declarations": "off",

@@ -676,7 +676,7 @@
       "rules": { "@typescript-eslint/no-magic-numbers": "off" }
     },
     {
-      "files": ["**/*.spec.{ts,tsx}", "**/*.test.{ts,tsx}"],
+      "files": ["**/*.spec.{ts,tsx}", "**/*.test.{ts,tsx}", "test/**/*"],
       "rules": {
         "no-undef": "off",
         "init-declarations": "off",
