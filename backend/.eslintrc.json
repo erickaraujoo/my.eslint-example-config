@@ -338,7 +338,7 @@
     "block-spacing": "error",
     "brace-style": "off",
     "camelcase": "error",
-    "capitalized-comments": ["error", "always"],
+    "capitalized-comments": "off",
     "class-methods-use-this": "off",
     "comma-dangle": "off",
     "comma-spacing": "off",
@@ -384,15 +384,7 @@
       { "position": "above" }
     ] /* Enforce position of line comments */,
     "linebreak-style": ["error", "unix"],
-    "lines-around-comment": [
-      "error",
-      {
-        "afterBlockComment": false,
-        "afterLineComment": false,
-        "beforeBlockComment": true,
-        "beforeLineComment": true
-      }
-    ],
+    "lines-around-comment": "off",
     "lines-between-class-members": "off",
     "logical-assignment-operators": ["error", "always"],
     "max-classes-per-file": ["error", 1],
@@ -414,7 +406,7 @@
     "max-params": ["error", 3],
     "max-statements": ["error", 20],
     "max-statements-per-line": ["error", { "max": 1 }],
-    "multiline-comment-style": ["error", "starred-block"],
+    "multiline-comment-style": "off",
     "multiline-ternary": "off",
     "new-cap": "error",
     "new-parens": "error",
@@ -679,11 +671,11 @@
       }
     },
     {
-      "files": "**/*.enum.ts",
+      "files": "**/*.enum.{ts,tsx}",
       "rules": { "@typescript-eslint/no-magic-numbers": "off" }
     },
     {
-      "files": ["**/*.spec.ts", "**/*.test.ts", "test/*", "tests/*"],
+      "files": ["**/*.spec.{ts,tsx}", "**/*.test.{ts,tsx}"],
       "rules": {
         "no-undef": "off",
         "init-declarations": "off",
