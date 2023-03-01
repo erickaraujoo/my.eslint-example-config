@@ -93,7 +93,7 @@
 
     /* Completeness */
     "skipDefaultLibCheck": true,
-    "skipLibCheck": false,
+    "skipLibCheck": true,
 
     /* Editor Support */
     "plugins": [],
