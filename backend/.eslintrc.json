@@ -117,7 +117,7 @@
     "@typescript-eslint/no-redeclare": "error",
     "@typescript-eslint/no-redundant-type-constituents": "error",
     "@typescript-eslint/no-require-imports": "error",
-    "@typescript-eslint/no-restricted-imports": ["error", { "patterns": ["../"] }],
+    "@typescript-eslint/no-restricted-imports": ["error", { "patterns": ["../.*", "./.*"] }],
     "@typescript-eslint/no-shadow": "error",
     "@typescript-eslint/no-this-alias": "error",
     "@typescript-eslint/no-throw-literal": "error",
@@ -678,10 +678,11 @@
     {
       "files": ["**/*.{spec,test}.ts", "test/**/*"],
       "rules": {
-        "no-undef": "off",
         "init-declarations": "off",
-        "@typescript-eslint/no-unsafe-assignment": "off",
+        "no-undef": "off",
+        "max-lines-per-function": "off",
         "@typescript-eslint/no-unsafe-argument": "off",
+        "@typescript-eslint/no-unsafe-assignment": "off",
         "@typescript-eslint/no-explicit-any": "off",
         "@typescript-eslint/unbound-method": "off"
       }

@@ -24,7 +24,7 @@
     /* Modules */
     "module": "ESNext",
     "rootDir": "src",
-    "moduleResolution": "nodenext",
+    "moduleResolution": "node",
     "baseUrl": "src",
     "paths": {},
     "rootDirs": [],
