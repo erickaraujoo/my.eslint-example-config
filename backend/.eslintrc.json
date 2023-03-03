@@ -423,7 +423,7 @@
     "no-compare-neg-zero": "error",
     "no-cond-assign": "error",
     "no-confusing-arrow": "off",
-    "no-console": "error",
+    "no-console": ["error", { "allow": ["error"] }],
     "no-const-assign": "error",
     "no-constant-binary-expression": "error",
     "no-constant-condition": "error",
@@ -686,6 +686,10 @@
         "@typescript-eslint/no-explicit-any": "off",
         "@typescript-eslint/unbound-method": "off"
       }
+    },
+    {
+      "files": ["**/prisma.service.ts"],
+      "rules": { "@typescript-eslint/no-misused-promises": "off" }
     }
   ],
   "settings": {
