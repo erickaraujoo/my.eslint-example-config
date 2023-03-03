@@ -818,7 +818,7 @@
       "files": ["**/*.{spec,test}.{ts,tsx}", "test/**/*"],
       "rules": {
         "no-undef": "off",
-        "init-declarations": "off",
+        "@typescript-eslint/init-declarations": "off",
         "@typescript-eslint/no-unsafe-assignment": "off",
         "@typescript-eslint/no-unsafe-argument": "off",
         "@typescript-eslint/no-explicit-any": "off",

@@ -678,7 +678,7 @@
     {
       "files": ["**/*.{spec,test}.ts", "test/**/*"],
       "rules": {
-        "init-declarations": "off",
+        "@typescript-eslint/init-declarations": "off",
         "no-undef": "off",
         "max-lines-per-function": "off",
         "@typescript-eslint/no-unsafe-argument": "off",
