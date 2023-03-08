@@ -833,7 +833,7 @@
       }
     },
     {
-      "files": ["**/{atomic-component,atomic-components}/{atom,atoms,organism,organisms}/**/*.{ts,tsx}", "/{base-component,base-components}/**/*.{ts,tsx}"],
+      "files": ["**/{atomic-component,atomic-components}/{atom,atoms,organism,organisms}/**/*.{ts,tsx}", "**/{base-component,base-components}/**/*.{ts,tsx}"],
       "rules": { "react/jsx-props-no-spreading": "off" }
     }
   ],
