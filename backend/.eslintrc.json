@@ -1,7 +1,7 @@
 {
   "root": true,
   "env": {
-    "es6": true,
+    "es2022": true,
     "node": true
   },
   "extends": [
@@ -24,8 +24,7 @@
   "parserOptions": {
     "ecmaVersion": "latest",
     "project": "./tsconfig.json",
-    "sourceType": "module",
-    "tsconfigRootDir": "./"
+    "sourceType": "module"
   },
   "plugins": [
     "@typescript-eslint",
@@ -98,7 +97,18 @@
     "@typescript-eslint/no-invalid-void-type": "error",
     "@typescript-eslint/no-loop-func": "error",
     "@typescript-eslint/no-loss-of-precision": "error",
-    "@typescript-eslint/no-magic-numbers": "error",
+    "@typescript-eslint/no-magic-numbers": [
+      "error",
+      {
+        "ignoreArrayIndexes": true,
+        "ignoreDefaultValues": true,
+        "ignoreClassFieldInitialValues": true,
+        "ignoreEnums": true,
+        "ignoreNumericLiteralTypes": true,
+        "ignoreReadonlyClassProperties": true,
+        "ignoreTypeIndexes": true
+      }
+    ],
     "@typescript-eslint/no-meaningless-void-operator": "error",
     "@typescript-eslint/no-misused-new": "error",
     "@typescript-eslint/no-misused-promises": [
@@ -670,10 +680,6 @@
       "rules": {
         "spaced-comment": "off"
       }
-    },
-    {
-      "files": ["**/*.{enum,enums}.ts", "**/{enum,enums}/**/*.ts"],
-      "rules": { "@typescript-eslint/no-magic-numbers": "off" }
     },
     {
       "files": ["**/*.{spec,test}.ts", "test/**/*"],

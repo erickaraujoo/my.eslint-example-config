@@ -2,7 +2,7 @@
   "root": true,
   "env": {
     "browser": true,
-    "es6": true
+    "es2022": true
   },
   "extends": [
     "airbnb",
@@ -27,8 +27,7 @@
     },
     "ecmaVersion": "latest",
     "project": "./tsconfig.json",
-    "sourceType": "module",
-    "tsconfigRootDir": "./"
+    "sourceType": "module"
   },
   "plugins": [
     "@typescript-eslint",
@@ -100,7 +99,18 @@
     "@typescript-eslint/no-invalid-void-type": "error",
     "@typescript-eslint/no-loop-func": "error",
     "@typescript-eslint/no-loss-of-precision": "error",
-    "@typescript-eslint/no-magic-numbers": "error",
+    "@typescript-eslint/no-magic-numbers": [
+      "error",
+      {
+        "ignoreArrayIndexes": true,
+        "ignoreDefaultValues": true,
+        "ignoreClassFieldInitialValues": true,
+        "ignoreEnums": true,
+        "ignoreNumericLiteralTypes": true,
+        "ignoreReadonlyClassProperties": true,
+        "ignoreTypeIndexes": true
+      }
+    ],
     "@typescript-eslint/no-meaningless-void-operator": "off",
     "@typescript-eslint/no-misused-new": "error",
     "@typescript-eslint/no-misused-promises": [
@@ -811,10 +821,6 @@
       }
     },
     {
-      "files": ["**/*.{enum,enums}.{ts,tsx}", "**/{enum,enums}/**/*.{ts,tsx}"],
-      "rules": { "@typescript-eslint/no-magic-numbers": "off" }
-    },
-    {
       "files": ["**/*.{spec,test}.{ts,tsx}", "test/**/*"],
       "rules": {
         "no-undef": "off",
@@ -833,8 +839,16 @@
       }
     },
     {
-      "files": ["**/{atomic-component,atomic-components}/{atom,atoms,organism,organisms,base}/**/*.{ts,tsx}"],
+      "files": [
+        "**/{atomic-component,atomic-components}/{atom,atoms,organism,organisms,base}/**/*.{ts,tsx}"
+      ],
       "rules": { "react/jsx-props-no-spreading": "off" }
+    },
+    {
+      "files": ["**/*.{store}.{ts,tsx}"],
+      "rules": {
+        "no-param-reassign": "off"
+      }
     }
   ],
   "settings": {

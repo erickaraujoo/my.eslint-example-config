@@ -49,6 +49,7 @@
     "in-memory": "test",
     "route": "routes",
     "migrations": "update",
+    "dto": "controller",
     "format": "core"
   },
   "material-icon-theme.files.associations": {
