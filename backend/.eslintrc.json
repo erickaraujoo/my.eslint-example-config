@@ -31,7 +31,6 @@
     "eslint-comments",
     "flowtype",
     "import",
-    "no-loops",
     "prettier",
     "sort-imports-es6-autofix",
     "sort-keys-fix",
@@ -299,9 +298,6 @@
     "import/order": "off",
     "import/prefer-default-export": "off",
 
-    /* No Loops - Default */
-    "no-loops/no-loops": "error",
-
     /* Prettier - Default */
     "prettier/prettier": [
       "error",
@@ -433,7 +429,7 @@
     "no-compare-neg-zero": "error",
     "no-cond-assign": "error",
     "no-confusing-arrow": "off",
-    "no-console": ["error", { "allow": ["error"] }],
+    "no-console": ["error", { "allow": ["error", "info", "time", "timeEnd"] }],
     "no-const-assign": "error",
     "no-constant-binary-expression": "error",
     "no-constant-condition": "error",

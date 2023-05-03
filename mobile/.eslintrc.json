@@ -34,7 +34,6 @@
     "eslint-comments",
     "flowtype",
     "import",
-    "no-loops",
     "prettier",
     "react",
     "react-hooks",
@@ -303,9 +302,6 @@
 
     /* JSX - Default */
     "jsx-a11y/label-has-associated-control": "off",
-
-    /* No Loops - Default */
-    "no-loops/no-loops": "error",
 
     /* Prettier - Default */
     "prettier/prettier": [
@@ -589,7 +585,7 @@
     "no-compare-neg-zero": "error",
     "no-cond-assign": "error",
     "no-confusing-arrow": "off",
-    "no-console": "error",
+    "no-console": ["error", { "allow": ["error", "info", "time", "timeEnd"] }],
     "no-const-assign": "error",
     "no-constant-binary-expression": "error",
     "no-constant-condition": "error",

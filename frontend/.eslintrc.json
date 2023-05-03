@@ -34,7 +34,6 @@
     "eslint-comments",
     "flowtype",
     "import",
-    "no-loops",
     "prettier",
     "react",
     "react-hooks",
@@ -306,9 +305,6 @@
     "jsx-a11y/no-static-element-interactions": "off",
     "jsx-a11y/click-events-have-key-events": "off",
     "jsx-a11y/no-noninteractive-element-interactions": "off",
-
-    /* No Loops - Default */
-    "no-loops/no-loops": "error",
 
     /* Prettier - Default */
     "prettier/prettier": [
@@ -592,7 +588,7 @@
     "no-compare-neg-zero": "error",
     "no-cond-assign": "error",
     "no-confusing-arrow": "off",
-    "no-console": "warn",
+    "no-console": ["warn", { "allow": ["error", "info", "time", "timeEnd"] }],
     "no-const-assign": "error",
     "no-constant-binary-expression": "error",
     "no-constant-condition": "error",
