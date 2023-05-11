@@ -11,14 +11,24 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[prisma]": {
-    "editor.defaultFormatter": "Prisma.prisma-insider"
-  },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma-insider",
+    "editor.formatOnSave": true
   },
   "css.lint.unknownAtRules": "ignore",
   "editor.codeActionsOnSave": {
@@ -78,6 +88,7 @@
     "server.ts": "serverless"
   },
   "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "typescript.tsserver.experimental.enableProjectDiagnostics": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "workbench.iconTheme": "material-icon-theme"
 }

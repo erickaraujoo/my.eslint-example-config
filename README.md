@@ -53,7 +53,6 @@ pnpm install
 - [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import) - _v2.27.5_
 - [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y) - _v6.7.1_
 - [eslint-plugin-n](https://www.npmjs.com/package/eslint-plugin-n) - _v15.6.1_
-- [eslint-plugin-no-loops](https://www.npmjs.com/package/eslint-plugin-no-loops) - _v0.3.0_
 - [eslint-plugin-prettier](https://www.npmjs.com/package/eslint-plugin-prettier) - _v4.2.1_
 - [eslint-plugin-promise](https://www.npmjs.com/package/eslint-plugin-promise) - _v6.1.1_
 - [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react) - _v7.32.1_
@@ -61,7 +60,6 @@ pnpm install
 - [eslint-plugin-simple-import-sort](https://www.npmjs.com/package/eslint-plugin-simple-import-sort) - _v9.0.0_
 - [eslint-plugin-sort-imports-es6-autofix](https://www.npmjs.com/package/eslint-plugin-sort-imports-es6-autofix) - _v0.6.0_
 - [eslint-plugin-sort-keys-fix](https://www.npmjs.com/package/eslint-plugin-sort-keys-fix) - _v1.1.2_
-- [eslint-plugin-spellcheck](https://www.npmjs.com/package/eslint-plugin-spellcheck) - _v0.0.20_
 - [eslint-plugin-unused-imports](https://www.npmjs.com/package/eslint-plugin-unused-imports) - _v2.0.0_
 - [prettier](https://www.npmjs.com/package/prettier) - _v2.8.3_
 - [typescript](https://www.npmjs.com/package/typescript) - _v4.9.4_
